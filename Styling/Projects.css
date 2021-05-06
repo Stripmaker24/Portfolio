@@ -1,0 +1,54 @@
+.container-colored
+{
+	background-color: #F5F1DA;
+	border: 5px solid black;
+	margin: 70px;
+	padding: 30px;
+}
+
+.project-container
+{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	align-items: center;
+	padding: 30px;
+	margin: 30px;
+	background-color: #96BB7C;
+}
+
+.project-content
+{
+	display: none;
+	letter-spacing: 0px;
+}
+
+.image > img
+{
+	max-height: 250px;
+}
+
+.click
+{
+	display: none;
+}
+
+.click:checked + label > .project-container
+{
+	flex-direction: column;
+}
+
+.click:checked + label > .project-container > .image > img
+{
+	display: none;
+}
+
+.click:checked + label > .project-container > .project-content
+{
+	display: block;
+}
+
+.flavor
+{
+	letter-spacing: 0px;
+}
