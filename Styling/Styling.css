@@ -1,5 +1,5 @@
 body{
-	background-color: #e3dfc8;
+	background-color: #746347;
 	margin: 0;
 	font-family: Consolas;
 	padding:0;
@@ -11,7 +11,7 @@ body{
 	list-style-type: none;
 	margin: 0;
 	overflow: hidden;
-	background-color: #EEBB4D;
+	background-color: #DACA7C;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -55,7 +55,7 @@ body{
 .me
 {
 	float: right;
-	background-image: url(Me.png);
+	background-image: url(Me.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
@@ -66,9 +66,4 @@ body{
 {
 	display: flex;
 	flex-wrap: nowrap;
-}
-
-#home-img
-{
-	
 }
