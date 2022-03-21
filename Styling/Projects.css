@@ -1,6 +1,6 @@
 .container-colored
 {
-	background-color: #F5F1DA;
+	background-color: #ABB7BB;
 	border: 5px solid black;
 	margin: 70px;
 	padding: 30px;
@@ -14,7 +14,8 @@
 	align-items: center;
 	padding: 30px;
 	margin: 30px;
-	background-color: #96BB7C;
+	background-color: #7296C3;
+	border: 5px solid black;
 }
 
 .project-content

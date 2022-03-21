@@ -11,7 +11,7 @@ body{
 	list-style-type: none;
 	margin: 0;
 	overflow: hidden;
-	background-color: #DACA7C;
+	background-color: #DACE7C;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -24,14 +24,15 @@ body{
 .nav li
 {
 	float: left;
-	color: white;
+	color: black;
 	font-size: 20px;
+	padding: 10px;
 }
 
 .nav li a
 {
 	display: block;
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
