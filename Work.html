@@ -7,98 +7,151 @@
 		<link rel="stylesheet" href="Styling/Timeline.css">	
 	</head>
 	<body>
-	<ul class="nav" style="min-width:90vw">
-		<li id="name"><a href="index.html">Michelle van Setten</a></li>
-		<li><a href="Work.html">Mijn IT Projecten</a></li>
-		<li><a href="Creative.html">Mijn Persoonlijke Projecten</a></li>
-	</ul>
-	<div class="container container-colored">
-		<h1>Projecten en Onderzoek</h1>
-		<p>druk op de projecten voor meer informatie</p>
-		<input type="checkbox" class="click" id="click_1">
-		<label for="click_1">
-			<div class="project-container">
-				<div class="title">
-					<h1>The Old Witch Tower</h1>
-					<h2>Gemaakt in 2021</h2>
-				</div>
-				<div class="image">
-					<img src="Images/OWT.png"/>
-				</div>
-				<div class="project-content">
-					<p>"The Old Witch Tower" is een "horror" action adventure game gemaakt met Unity. De game is gebaseerd op de geestenjager boeken geschreven door Joseph Delaney en door mijn eerste game gemaakt in Java. In dit spel speel je als jonge geestenjaagster Chyntia, die samen met haar partner Gerg opdracht hebben om de oude heksentoren te onderzoeken en leeg te halen als er geesten aanwezig zijn. Voordat de twee jagers samen aan hun onderzoek kunnen beginnen rent Gerg roekeloos de locatie in.  Nu moet Chyntia opzoek gaan naar haar partner om hem uit de toren te redden. Het spel is hieronder te spelen, maar kan ook gespeeld worden op <a href="https://simmer.io/@Stripmaker24/the-old-witch-tower">simmer.oi</a>.</p>
-					<iframe src="https://i.simmer.io/@Stripmaker24/the-old-witch-tower" style="width:1024px;height:768px"></iframe>
-				</div>
+		<ul class="nav">
+			<li id="name"><a href="index.html">Michelle van Setten</a></li>
+			<li><a href="Work.html">My IT Projects</a></li>
+			<li><a href="Creative.html">My Personal Projects</a></li>
+		</ul>
+		<ul class="small-nav">
+			<li id="name"><a href="index.html">Michelle van Setten</a></li>
+			<li><a href="javascript:void(0)" onclick="openNav()">&#9776;</a></li>
+		</ul>
+
+		<div id="overlay-nav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<li id="name"><a href="index.html">Home</a></li>
+				<li><a href="Work.html">My IT Projects</a></li>
+				<li><a href="Creative.html">My Personal Projects</a></li>
 			</div>
-		</label>
-		
-		<input type="checkbox" class="click" id="click_2">
-		<label for="click_2">
-			<div class="project-container">
-				<div class="title">
-					<h1>Kalender demo</h1>
-					<h2>Gemaakt in 2020</h2>
+		</div>
+		<div class="container container-colored">
+			<h1>Projects</h1>
+			<p>Click on the projects for more information</p>
+			<input type="checkbox" class="click" id="AYR">
+			<label for="AYR">
+				<div class="project-container">
+					<div class="title">
+						<h1>ARe You Ready 2022 [EN/NL]</h1>
+						<h2>Made in 2022</h2>
+					</div>
+					<div class="image">
+						<img src="Images/AYR.png"/>
+					</div>
+					<div class="project-content">
+						<p>"ARe You Ready is a game that was made for MediaMasters. The game was used during the week of media knowledge, an event where children learn how to navigate online media. In the game the player experiences the day of a twelve-year-old Dutch student in the year 2030. In this fictional future almost everyone has a pair AR glasses. While playing the game the player encounters various scenario involving AR. After each scenario the player is asked about their opinion by the ARchie. The video below shows the English version of the game. The English version of the game can be played below or on <a href="https://tinyurl.com/are-ready-en">CoSpaces</a> . The Dutch version of the game can be played on <a href="https://tinyurl.com/are-ready-nl">CoSpaces</a>.</p>
+						<div class="vg-container">
+							<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/jA0nxZnFNPk" title="ARe You Ready" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe class="game" width="640" height="480" frameBorder="0" src="https://edu.cospaces.io/KNX-DCH"></iframe>
+						</div>
+					</div>
 				</div>
-				<div class="image">
-					<img src="Images/KD.png"/>
+			</label>
+
+			<input type="checkbox" class="click" id="Dialogic">
+			<label for="Dialogic">
+				<div class="project-container">
+					<div class="title">
+						<h1>AR for Dialogic</h1>
+						<h2>Made in 2022</h2>
+					</div>
+					<div class="image">
+						<img src="Images/Dialogic.png"/>
+					</div>
+					<div class="project-content">
+						<p>"During my fourth year of university, me and a group of seven other students created an AR application for the company Dialogic. We were asked to find a way to make data visible in AR. Over the course of half a year we created a system where you could use a link to a JSON file to generate pie and bar charts. They could be customized and be viewed in both the browsers and marker-based AR. Besides the different charts users could also upload images and text. All these elements could then be combined in a slideshow, which could be viewed in the browser and in marker-based AR. Below is the infographic we used to present the solution.</p>
+						<div class="image-container">
+							<img class="poster" src="Images/AR poster.png"/>
+						</div>
+					</div>
 				</div>
-				<div class="project-content">
-					<p>Voor een groepsproject kreeg ik de taak om een digitale kalender te maken. Met deze kalender kan personeel van het fictieve bedrijf Bumbo aangeven wanneer zij niet geroosterd willen worden. Dit doen ze door net zoals in google agenda blokken aan te maken die ze later kunnen aanpassen. Voor dit project is gebruik gemaakt van Javascript, JSON, .NET Core, en een kleine MSSQL database. Hieronder is een video die laat zien hoe de agenda precies werkt.p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/9tkmqb_qno4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</label>
+
+			<input type="checkbox" class="click" id="OWT">
+			<label for="OWT">
+				<div class="project-container">
+					<div class="title">
+						<h1>The Old Witch Tower</h1>
+						<h2>Made in 2021</h2>
+					</div>
+					<div class="image">
+						<img src="Images/Old Witch Tower.png"/>
+					</div>
+					<div class="project-content">
+						<p>"The Old Witch Tower is a 2D “horror” action-adventure game made in Unity. The game is based on the Wardstone Chronicles by Joseph Delaney and my first game made in Java. In this game you play as the young spook Chyntia. Together with her partner Gerg, she was tasked to investigate the old witch tower and clear it of any lingering ghosts. Before they can begin their investigation, Gerg foolishly rushes into the location. Now Chyntia must save her partner from whatever is inside that tower. The game can be played below or at  <a href="https://simmer.io/@Stripmaker24/the-old-witch-tower">simmer.oi</a>.</p>
+						<iframe class="game" src="https://i.simmer.io/@Stripmaker24/the-old-witch-tower" style="width:1024px;height:768px"></iframe>
+					</div>
 				</div>
-			</div>
-		</label>
-		
-		<input type="checkbox" class="click" id="click_3">
-		<label for="click_3">
-			<div class="project-container">
-				<div class="title">
-					<h1>D&D Manager</h1>
-					<h2>Gemaakt in 2020</h2>
+			</label>
+			
+			<input type="checkbox" class="click" id="Calander">
+			<label for="Calander">
+				<div class="project-container">
+					<div class="title">
+						<h1>Calendar demo</h1>
+						<h2>Made in 2020</h2>
+					</div>
+					<div class="image">
+						<img src="Images/Calander.png"/>
+					</div>
+					<div class="project-content">
+						<p>During a group project I was tasked with making a digital calendar. With this calendar staff of the fictional company Bumbo can plan when they can not work. This calendar works like Google calendar. For this project I used JavaScript, JSON, .NET Core, and a small MSSQL database. The video below shows how the calendar works.</p>
+						<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/9tkmqb_qno4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</div>
-				<div class="image">
-					<img src="Images/DND.png"/>
+			</label>
+			
+			<input type="checkbox" class="click" id="DDM">
+			<label for="DDM">
+				<div class="project-container">
+					<div class="title">
+						<h1>D&D Manager</h1>
+						<h2>Made in 2020</h2>
+					</div>
+					<div class="image">
+						<img src="Images/DNDM.png"/>
+					</div>
+					<div class="project-content">
+						<p>At the end of my C# course, I made a website where you can make and manage Dungeon and Dragon characters and shops. To start a user needs to make an account to start creating characters. Each character gets their own bag of gold which they can spend at the different shops on the website. In each shop characters can by helms, chest pieces, pants, shoes, necklaces, and rings. All the shops on the website are maintained by the fictional staff of the website. The video below shows how all the different parts of the website work.</p>
+						<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8EsKM-fTzR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</div>
-				<div class="project-content">
-					<p>Als eindopdracht van een C# course heb ik een website gemaakt om personages en hun outfit te managen. Als thema heb ik Dungeons and Dragons genomen. Op de website maak je een account en kan je nieuwe personages aanmaken. Per personage kan je aangeven hoeveel goud hij heeft te besteden in de winkels. Elke winkel heeft een selectie van helmen, harnassen, broeken, schoenen, kettingen, en ringen. Deze winkels worden onderhouden door het fictieve team achter de site. In de video hieronder is te zien hoe alle functies op de website werken.</p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/8EsKM-fTzR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</label>
+			
+			<input type="checkbox" class="click" id="SFF">
+			<label for="SFF">
+				<div class="project-container">
+					<div class="title">
+						<h1>Skyrim Food Fight</h1>
+						<h2>Made in 2019</h2>
+					</div>
+					<div class="image">
+						<img src="Images/SFF.png"/>
+					</div>
+					<div class="project-content">
+						<p>At the end of my first year of university I made a Fruit Ninja clone in Java. The gameplay is based on Fruit Ninja, but the visuals are based on the game “The ElderScrolls V: Skyrim”. In this game the player needs to slice the apples and berries while avoiding the electric balls flying across the screen. The video below shows how the game is played.</p>
+						<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/nYIRmte8qh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</div>
-			</div>
-		</label>
-		
-		<input type="checkbox" class="click" id="click_6">
-		<label for="click_6">
-			<div class="project-container">
-				<div class="title">
-					<h1>Skyrim Food Fight</h1>
-					<h2>Gemaakt in 2019</h2>
+			</label>
+			
+			<input type="checkbox" class="click" id="WT">
+			<label for="WT">
+				<div class="project-container">
+					<div class="title">
+						<h1>The Witch Tower</h1>
+						<h2>Made in 2018</h2>
+					</div>
+					<div class="image">
+						<img src="Images/Witch Tower.png"/>
+					</div>
+					<div class="project-content">
+						<p>After half a year working with Java I created a text-based dungeon crawler. In this game the player moves from room to room by typing where they want to go. This game is inspired by Wardstone Chronicles by Joseph Delaney. The goal of the game is to save the family of the protagonist of the books. The video below shows how the game is played from start to end.</p>
+						<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ckon-CntZrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</div>
-				<div class="image">
-					<img src="Images/SFF.png"/>
-				</div>
-				<div class="project-content">
-					<p>Als eindopdracht na een jaar te hebben geprogrammeerd met Java heb ik het spel “fruitninja” nagemaakt. De gameplay lijkt op die van de populaire game, maar voor het uiterlijk heb ik stukken gebruikt uit “The ElderScrolls V: Skyrim”, een populaire RPG spel uit 2011. In dit spel probeer je de appels en besjes in stukken te slaan, maar de ballen van elektrische energie te ontwijken. In de video hieronder is te zie (en te horen) hoe het spel gespeeld word.</p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/nYIRmte8qh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</label>
-		
-		<input type="checkbox" class="click" id="click_7">
-		<label for="click_7">
-			<div class="project-container">
-				<div class="title">
-					<h1>The Witch Tower</h1>
-					<h2>Gemaakt in 2018</h2>
-				</div>
-				<div class="image">
-					<img src="Images/TWT.png"/>
-				</div>
-				<div class="project-content">
-					<p>Na een half jaar te hebben gewerkt met Java heb ik een tekst-based dungeon crawler gemaakt. In dit spel verplaats je van kamer naar kamer door te schrijven waar je heen wilt gaan. Als inspiratie heb ik een deel uit het vierde boek van de geestenjager serie, geschreven door Joseph Delaney gebruikt. Het doel van dit spel is om de familie van Tom Wachter te bevrijden van een heksenclan. In de video hieronder is te zien hoe het spel loopt.</p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/ckon-CntZrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</label>
-	</div>
+			</label>
+		</div>
+		<script src="JavaScript/OpenNav.js"></script>
 	</body>
 </html>

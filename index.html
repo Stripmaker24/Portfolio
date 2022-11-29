@@ -6,66 +6,41 @@
 		<link rel="stylesheet" href="Styling/Styling.css">
 	</head>
 	<body>
-		<ul class="nav" style="min-width:90vw">
+		<ul class="nav">
 			<li id="name"><a href="index.html">Michelle van Setten</a></li>
-			<li><a href="Work.html">Mijn IT Projecten</a></li>
-			<li><a href="Creative.html">Mijn Persoonlijke Projecten</a></li>
+			<li><a href="Work.html">My IT Projects</a></li>
+			<li><a href="Creative.html">My Personal Projects</a></li>
 		</ul>
+		<ul class="small-nav">
+			<li id="name"><a href="index.html">Michelle van Setten</a></li>
+			<li><a href="javascript:void(0)" onclick="openNav()">&#9776;</a></li>
+		</ul>
+
+		<div id="overlay-nav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<li id="name"><a href="index.html">Home</a></li>
+				<li><a href="Work.html">My IT Projects</a></li>
+				<li><a href="Creative.html">My Personal Projects</a></li>
+			</div>
+		</div>
 		<div>
-			<div class="container no-margin">
-				<div class="bubble">
-				</div>
-				<div class="me">
-				</div>
-			</div>
-			<div class="container">
-				<h1>Werktijdlijn</h1>
-				<div class="line"></div>
-				<div class="timeline">
-					<div class="circle">
-						<div class="content">
-							<p>RSG Pantarijn - Kantinemedewerker</p>
-							<p>Sep 2014 - Jun 2016</p>
-						</div>
-					</div>
-					<div class="circle">
-						<div class="content">
-							<p>SANDD - Postbezorger</p>
-							<p>Mei 2018 - Aug 2018</p>
-						</div>
-					</div>
-					<div class="circle">
-						<div class="content">
-							<p>McDonald's - Crew-lid</p>
-							<p>Jul 2019 - Dec 2019</p>
-						</div>
-					</div>
-					<div class="circle">
-						<div class="content">
-							<p>Mantelzorger</p>
-							<p>Aug 2020 - Heden</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<h1>Schooltijdlijn</h1>
-				<div class="line"></div>
-				<div class="timeline">
-					<div class="circle">
-						<div class="content">
-							<p>RSG Pantarijn - Havo NT profiel</p>
-							<p>Sep 2013 - Mei 2018</p>
-						</div>
-					</div>
-					<div class="circle">
-						<div class="content">
-							<p>Avans Hogeschool - Informatica</p>
-							<p>Sep 2018 - Heden</p>
-						</div>
-					</div>
+			<div class="home-container">
+				<img src="Images/Me.jpg"/>
+				<div class="about-me">
+					<p>
+						<span>About Me:</span><br/><br>
+						I am a computer science student from Avans University of applied sciences. <br/><br>
+						
+						Besides my background in IT I also dabble in creative projects. <br/> 
+						Both my IT and creative projects can be found with the links above! <br/><br>
+						
+						I have both dyslexia and ADD. This results in me thinking a bit different than other people.<br/> 
+						I strife for good results and I am aware of where I struggle.
+					</p>
 				</div>
 			</div>
 		</div>
+		<script src="JavaScript/OpenNav.js"></script>
 	</body>
 </html>

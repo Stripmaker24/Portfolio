@@ -5,158 +5,161 @@
 		<link rel="stylesheet" href="Styling/Styling.css">
 		<link rel="stylesheet" href="Styling/Projects.css">	
 		<link rel="stylesheet" href="Styling/Timeline.css">	
+		<link rel="stylesheet" href="Styling/Gallery.css">	
 	</head>
 	<body>
-	<ul class="nav" style="min-width:90vw">
-		<li id="name"><a href="index.html">Michelle van Setten</a></li>
-		<li><a href="Work.html">Mijn IT Projecten</a></li>
-		<li><a href="Creative.html">Mijn Persoonlijke Projecten</a></li>
-	</ul>
-	<div class="container container-colored">
-		<h1>Schrijfwerken</h1>
-		<p class="flavor">Elke stukje tekst wat ik schrijf is ook een stukje van mijzelf. Daarom vind ik het belangrijk om documenten waar veel tijd aan is besteed hier hun ere plekje te geven. Dit kan een onderzoek, eindportfolio’s of hobby project zijn. De teksten hieronder zijn geschreven in het Nederlands of in het Engels. </p>
-		<input type="checkbox" class="click" id="click_7">
-		<label for="click_7">
-			<div class="project-container">
-				<div class="title">
-					<h1>Avans Inovatie Studio's</h1>
-					<h2>Deelgenomen: 2021-2022</h2>
+		<ul class="nav">
+			<li id="name"><a href="index.html">Michelle van Setten</a></li>
+			<li><a href="Work.html">My IT Projects</a></li>
+			<li><a href="Creative.html">My Personal Projects</a></li>
+		</ul>
+		<ul class="small-nav">
+			<li id="name"><a href="index.html">Michelle van Setten</a></li>
+			<li><a href="javascript:void(0)" onclick="openNav()">&#9776;</a></li>
+		</ul>
+
+		<div id="overlay-nav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<li id="name"><a href="index.html">Home</a></li>
+				<li><a href="Work.html">My IT Projects</a></li>
+				<li><a href="Creative.html">My Personal Projects</a></li>
+			</div>
+		</div>
+		<div class="container container-colored">
+			<h1>Writting work</h1>
+			<p>Click on the works for more information</p>
+			<input type="checkbox" class="click" id="ARC">
+			<label for="ARC">
+				<div class="project-container">
+					<div class="title">
+						<h1>The AR Challenge</h1>
+						<h2>Made in 2022</h2>
+					</div>
+					<div class="image">
+						<img src="Images/ARC.png"/>
+					</div>
+					<div class="project-content">
+						<p>In my fourth year of university I did research on UI/UX development for AR applications. The report is written in English.</p>
+						<iframe src="PDF/The AR challenge.pdf" width="100%" height="1000px"></iframe>
+					</div>
 				</div>
-				<div class="image">
-					<img src="Images/AIS.png"/>
+			</label>
+			<input type="checkbox" class="click" id="AIS">
+			<label for="AIS">
+				<div class="project-container">
+					<div class="title">
+						<h1>Avans Inovation Studios</h1>
+						<h2>Participated: 2021-2022</h2>
+					</div>
+					<div class="image">
+						<img src="Images/AIS.png"/>
+					</div>
+					<div class="project-content">
+						<p>In my fourth year of university I participated at the minor "Avans Inovative Studio's". The report below is a summery of all six projects I was part of. The report is written in Dutch.</p>
+						<iframe src="PDF/AIS-Portfolio.pdf" width="100%" height="1000px"></iframe>
+					</div>
 				</div>
-				<div class="project-content">
-					<p>Voor mijn minor heb ik per ongeluk gekozen voor Avans Inovatie studio's. Dit ongelukje werd uiteindelijk een hele leerzame en geweldige tijd. Tijdens deze minor heb ik geleerd om met een groep snel nieuwe oplossingen te bedenken voor een probleem van een klant. Hier onder is mijn portfolio te vinden die ik heb gemaakt tijdens de minor.</p>
-					<iframe src="PDF/AIS-Portfolio.pdf" width="100%" height="1000px"></iframe>
+			</label>
+			<input type="checkbox" class="click" id="Datamining">
+			<label for="Datamining">
+				<div class="project-container">
+					<div class="title">
+						<h1>Datamining Research</h1>
+						<h2>Made in 2020</h2>
+					</div>
+					<div class="image">
+						<img src="Images/Datamining.png"/>
+					</div>
+					<div class="project-content">
+						<p>In my second year of university I did a datamining research where I tried to predict prices of secondhand cars. The report is written in Dutch.</p>
+						<iframe src="PDF/Datamining-23-08-2020.pdf" width="100%" height="1000px"></iframe>
+					</div>
+				</div>
+			</label>
+			<input type="checkbox" class="click" id="GIB">
+			<label for="GIB">
+				<div class="project-container">
+					<div class="title">
+						<h1>Gamification in primary education</h1>
+						<h2>Made in 2019</h2>
+					</div>
+					<div class="image">
+						<img src="Images/GIB.png"/>
+					</div>
+					<div class="project-content">
+						<p>In my first year of university I did research on gamification in primary education. The report is written in Dutch.</p>
+						<iframe src="PDF/Gamification in het basisonderwijs.docx.pdf" width="100%" height="1000px"></iframe>
+					</div>
+				</div>
+			</label>	
+		</div>
+		<div class="container container-colored">
+			<h1>Power of PowerPoint</h1>
+			<p class="flavor">In middle school, I participated in a class about making small animations with Microsoft PowerPoint. This became one of my hobbies, but instead of animations I use the program to bring my own characters to life in the form of small artworks. I tend to call it 2D Sculpting.</p>
+			<div class="box-container">
+				<div class="responsive">
+					<div class="gallery">
+						<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f991fc0-ff4f-447b-880d-f02996bfc5b7/dfgg9nw-2fd80c6a-7e5f-4cbe-9d41-d048a5bef992.png/v1/fill/w_1280,h_1233,strp/jandar_rowland_by_stripmaker24_dfgg9nw-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIzMyIsInBhdGgiOiJcL2ZcLzRmOTkxZmMwLWZmNGYtNDQ3Yi04ODBkLWYwMjk5NmJmYzViN1wvZGZnZzludy0yZmQ4MGM2YS03ZTVmLTRjYmUtOWQ0MS1kMDQ4YTViZWY5OTIucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.dHUbnZeeV4JNR-2ynrvf0SXHNo1xqFuHsiEhGceTasE">
+						<div class="desc">Jandar Rowland [2022]</div>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="gallery">
+						<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f991fc0-ff4f-447b-880d-f02996bfc5b7/df8ngdo-5d4de5c3-4876-4b4e-a00b-3f38d92980ae.png/v1/fill/w_1280,h_1283,strp/roxsai_by_stripmaker24_df8ngdo-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MyIsInBhdGgiOiJcL2ZcLzRmOTkxZmMwLWZmNGYtNDQ3Yi04ODBkLWYwMjk5NmJmYzViN1wvZGY4bmdkby01ZDRkZTVjMy00ODc2LTRiNGUtYTAwYi0zZjM4ZDkyOTgwYWUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.0QEJ3pcT8sry5HF_xC8BuZy6yQl8_MFR1cGru-IUTxI">
+						<div class="desc">Roxsai [2022]</div>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="gallery">
+						<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f991fc0-ff4f-447b-880d-f02996bfc5b7/df8ng52-5b73d35f-2697-4eff-bd27-cc87db774d2e.png/v1/fill/w_1280,h_1280,q_80,strp/octavia_hybrid_form_by_stripmaker24_df8ng52-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzRmOTkxZmMwLWZmNGYtNDQ3Yi04ODBkLWYwMjk5NmJmYzViN1wvZGY4bmc1Mi01YjczZDM1Zi0yNjk3LTRlZmYtYmQyNy1jYzg3ZGI3NzRkMmUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5mkB-XulnRGak7PtEX_3ZCK_sToKsoBJLYuLUqrnVIA">
+						<div class="desc">Octavia (Hybrid) [2022]</div>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="gallery">
+						<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f991fc0-ff4f-447b-880d-f02996bfc5b7/df8nfyj-3645da86-114f-4a6e-9dc8-cd0aae2bbf4e.png/v1/fill/w_1280,h_1280,q_80,strp/octavia_owl_form_by_stripmaker24_df8nfyj-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzRmOTkxZmMwLWZmNGYtNDQ3Yi04ODBkLWYwMjk5NmJmYzViN1wvZGY4bmZ5ai0zNjQ1ZGE4Ni0xMTRmLTRhNmUtOWRjOC1jZDBhYWUyYmJmNGUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ioPstiEb-egWZluA0Yo4MvoS8M3DC5AcI4iFJVyOz5o">
+						<div class="desc">Octavia (Owl) [2022]</div>
+					</div>
+				</div>		
+				<div class="responsive">
+					<div class="gallery">
+						<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f991fc0-ff4f-447b-880d-f02996bfc5b7/df8nfwd-e329b693-874b-4a90-976d-4553fb2975b6.png/v1/fill/w_1280,h_1277,strp/octavia_human_form_by_stripmaker24_df8nfwd-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI3NyIsInBhdGgiOiJcL2ZcLzRmOTkxZmMwLWZmNGYtNDQ3Yi04ODBkLWYwMjk5NmJmYzViN1wvZGY4bmZ3ZC1lMzI5YjY5My04NzRiLTRhOTAtOTc2ZC00NTUzZmIyOTc1YjYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.d5s1dOCwEl1Jihct-SPrCAWiXJ9IHZHyANjYu2ezcFE">
+						<div class="desc">Octavia (Human) [2022]</div>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="gallery">
+						<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f991fc0-ff4f-447b-880d-f02996bfc5b7/df8nfsf-0b0f17fc-8260-40fa-8498-17e3152b1fbd.png/v1/fill/w_1280,h_1466,q_80,strp/aurum_by_stripmaker24_df8nfsf-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ2NiIsInBhdGgiOiJcL2ZcLzRmOTkxZmMwLWZmNGYtNDQ3Yi04ODBkLWYwMjk5NmJmYzViN1wvZGY4bmZzZi0wYjBmMTdmYy04MjYwLTQwZmEtODQ5OC0xN2UzMTUyYjFmYmQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.etwFQp0sEFEKIloDSZRXgfLNTx3-qWOdIRjokHy538w">
+						<div class="desc">Aurum [2022]</div>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="gallery">
+						<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f991fc0-ff4f-447b-880d-f02996bfc5b7/df8nheg-7aae417e-60e1-422e-9614-459381a4cdef.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRmOTkxZmMwLWZmNGYtNDQ3Yi04ODBkLWYwMjk5NmJmYzViN1wvZGY4bmhlZy03YWFlNDE3ZS02MGUxLTQyMmUtOTYxNC00NTkzODFhNGNkZWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TRgkQ_xeMbDPHvemi8KCqBcywbgg-fePNWUkrWWAYqs">
+						<div class="desc">Moanne Ule [2021]</div>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="gallery">
+						<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f991fc0-ff4f-447b-880d-f02996bfc5b7/dej3shl-1f53e2d3-e5dd-4fc9-9419-cac1bef47e06.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRmOTkxZmMwLWZmNGYtNDQ3Yi04ODBkLWYwMjk5NmJmYzViN1wvZGVqM3NobC0xZjUzZTJkMy1lNWRkLTRmYzktOTQxOS1jYWMxYmVmNDdlMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vBYCh6ugbI3TktHrJSWhwq4O9dkSAcVFr3eMy6cyCcE">
+						<div class="desc">Shevana Khali [2021]</div>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="gallery">
+						<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f991fc0-ff4f-447b-880d-f02996bfc5b7/de5j5ae-25035467-1e3c-49a6-bf36-43cfeae2fd9a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRmOTkxZmMwLWZmNGYtNDQ3Yi04ODBkLWYwMjk5NmJmYzViN1wvZGU1ajVhZS0yNTAzNTQ2Ny0xZTNjLTQ5YTYtYmYzNi00M2NmZWFlMmZkOWEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.IqWMpjrQL8SlU9kVKQtJF8biR65pKRIkXrshGf54mLo">
+						<div class="desc">Akahri Meristan [2020]</div>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="gallery">
+						<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f991fc0-ff4f-447b-880d-f02996bfc5b7/dcw0rgi-dcd33970-d4e5-49f5-91f3-a99119a22d08.png/v1/fill/w_600,h_800,q_80,strp/powergirls_by_stripmaker24_dcw0rgi-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvNGY5OTFmYzAtZmY0Zi00NDdiLTg4MGQtZjAyOTk2YmZjNWI3XC9kY3cwcmdpLWRjZDMzOTcwLWQ0ZTUtNDlmNS05MWYzLWE5OTExOWEyMmQwOC5wbmciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.BtL3heSHppmRzFXlAd3jKnG9TI0w61oVxHqICSpKhrc">
+						<div class="desc">Power Girls [2019]</div>
+					</div>
 				</div>
 			</div>
-		</label>
-		<input type="checkbox" class="click" id="click_8">
-		<label for="click_8">
-			<div class="project-container">
-				<div class="title">
-					<h1>Data mining onderzoek</h1>
-					<h2>Gemaakt in 2020</h2>
-				</div>
-				<div class="image">
-					<img src="Images/DM23082020.png"/>
-				</div>
-				<div class="project-content">
-					<p>In het tweede jaar van mijn opleiding heb ik een onderzoek gedaan naar datamining. In dit onderzoek wordt gekeken naar wat datamining precies is en hoe je de verschillende technieken kan toepassen. Daarna volgt er een praktijk onderzoek naar prijzen van tweedehands auto’s. Voor dit deel van het onderzoek is een dataset gevonden met tweedehands auto’s en hun prijzen. Daarna is uitgezocht welke onderdelen van de auto de prijs bepalen. Vervolgens is er geprobeerd met regressie een algoritme te maken die de prijs kan bepalen voor auto’s die nog geen prijs hebben. Het onderzoek is hieronder te lezen.</p>
-					<iframe src="PDF/Datamining-23-08-2020.pdf" width="100%" height="1000px"></iframe>
-				</div>
-			</div>
-		</label>
-		<input type="checkbox" class="click" id="click_9">
-		<label for="click_9">
-			<div class="project-container">
-				<div class="title">
-					<h1>Project: MINDSTORMS</h1>
-					<h2>Gemaakt in 2020</h2>
-				</div>
-				<div class="image">
-					<img src="Images/Robots.png"/>
-				</div>
-				<div class="project-content">
-					<p>In het tweede jaar van mijn opleiding heb ik de kans gekregen om les te geven aan kinderen van de basisschool. In deze lessenserie van drie lessen heb ik kinderen van groep 6/7/8 geleerd kleine programma’s te maken voor LEGO MINDSTORMS. De voorbereiding en hoe de lessen zijn verlopen zijn beschreven in het verslag hieronder. Mijn dank gaat uit naar et bedrijf Schuberg Philis waar ik de robots van mocht lenen.</p>
-					<iframe src="PDF/Mindstorms.pdf" width="100%" height="1000px"></iframe>
-				</div>
-			</div>
-		</label>		
-	</div>
-	<div class="container container-colored">
-		<h1>Power of PowerPoint</h1>
-		<p class="flavor">Toen ik 12 jaar was koos ik er voor om naar het RGS Pantarijn in Kesteren te gaan. Op deze kleine school kregen wij in naast de verplichte vakken keuze vakken aangeboden. Eén van deze lessen was leren animeren met het programma PowerPoint. Hier heb ik geleerd dat je PowerPoint voor meer kan gebruiken dan presentaties over je favoriete dier. Deze cursus werd uiteindelijk een uit de hand gelopen hobby. In het begin deed ik animaties maken, maar tegenwoordig gebruik ik PowerPoint om mijn eigen personages leven te geven.</p>
-		<label for="click_6">
-			<div class="project-container">
-				<div class="title">
-					<h1>Moanne Ûle</h1>
-					<h2>Gemaakt in 2021</h2>
-				</div>
-				<div class="image">
-					<img src="Images/Moanne.png"/>
-				</div>
-				<div class="project-content">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/7UyEG8dAec8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</label>
-		<input type="checkbox" class="click" id="click_1">
-		<label for="click_1">
-			<div class="project-container">
-				<div class="title">
-					<h1>Shevana Khali</h1>
-					<h2>Gemaakt in 2021</h2>
-				</div>
-				<div class="image">
-					<img src="Images/Shevana_Khali.png"/>
-				</div>
-				<div class="project-content">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/7pcFI-rN1zE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</label>
-		<input type="checkbox" class="click" id="click_2">
-		<label for="click_2">
-			<div class="project-container">
-				<div class="title">
-					<h1>Akahri Meristan</h1>
-					<h2>Gemaakt in 2020</h2>
-				</div>
-				<div class="image">
-					<img src="Images/Akahri_Meristan.png"/>
-				</div>
-				<div class="project-content">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/VIn1Xduz0Jc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</label>
-		<input type="checkbox" class="click" id="click_3">
-		<label for="click_3">
-			<div class="project-container">
-				<div class="title">
-					<h1>Luci en Djana</h1>
-					<h2>Gemaakt in 2019</h2>
-				</div>
-				<div class="image">
-					<img src="Images/PowerGirls.png"/>
-				</div>
-				<div class="project-content">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/Lh9fIr7bk_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</label>
-		<input type="checkbox" class="click" id="click_4">
-		<label for="click_4">
-			<div class="project-container">
-				<div class="title">
-					<h1>Asriel van Undertale</h1>
-					<h2>Gemaakt in 2018</h2>
-				</div>
-				<div class="image">
-					<img src="Images/AZ.png"/>
-				</div>
-				<div class="project-content">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/H44z2lJRl9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</label>
-		<input type="checkbox" class="click" id="click_5">
-		<label for="click_5">
-			<div class="project-container">
-				<div class="title">
-					<h1>PowerPoint Animatie</h1>
-					<h2>Gemaakt in 2016</h2>
-				</div>
-				<div class="image">
-					<img src="Images/Animatie.png"/>
-				</div>
-				<div class="project-content">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/027-dJ9ibms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</label>
-		
-	</div>
+		</div>
+		<script src="JavaScript/OpenNav.js"></script>
 	</body>
 </html>
