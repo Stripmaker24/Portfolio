@@ -122,13 +122,13 @@ body{
 	}
   }
 
-@media only screen and (max-width: 1325px){
+@media screen and (max-width: 1325px){
 	.home-container{
 		flex-direction: column;
 	}
 }
 
-@media only screen and (max-width: 715px){
+@media screen and (max-width: 715px){
 	.nav{
 		display: none;
 	}
@@ -137,7 +137,7 @@ body{
 	}
 }
 
-@media only screen and (max-width: 644px){
+@media screen and (max-width: 644px){
 	.home-container > img{
 		width: 100%;
 		height: auto;
