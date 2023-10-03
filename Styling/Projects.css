@@ -1,7 +1,7 @@
 .container-colored
 {
-	background-color: #ABB7BB;
-	border: 5px solid #58727a;
+	background-color: #E8DFCA;
+	border: 5px solid #a8a08d;
 	margin: 70px;
 	padding: 30px;
 }
@@ -14,8 +14,14 @@
 	align-items: center;
 	padding: 30px;
 	margin: 30px;
-	background-color: #7296C3;
-	border: 5px solid #3e4c5e;
+	background-color: #AEBDCA;
+	border: 5px solid #5f6e7a;
+}
+
+.project-container:hover
+{
+	border: 5px solid #29323a;
+  cursor: pointer;
 }
 
 .poster{

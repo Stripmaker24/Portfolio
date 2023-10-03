@@ -1,9 +1,5 @@
 div.gallery{
-    border: 1px solid #ccc;
-}
-
-div.gallery:hover{
-    border: 1px solid #777;
+    border: 1px dotted #5f6e7a;
 }
 
 div.gallery img {
